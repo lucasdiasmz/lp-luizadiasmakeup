@@ -699,13 +699,31 @@ p {
     justify-items: center;
 }
 
-.arch-about {
-    width: min(100%, 400px);
+/* Foto reta com moldura fina dourada deslocada para trás */
+.about-frame {
+    --offset: 12px;
+    position: relative;
+    width: min(100% - var(--offset), 400px);
     aspect-ratio: 3 / 4;
+    margin: var(--offset) 0 0 var(--offset);
 }
 
-.arch-about img {
+.about-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--champagne);
+    transform: translate(calc(var(--offset) * -1), calc(var(--offset) * -1));
+    pointer-events: none;
+}
+
+.about-frame img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: 50% 25%;
+    background: var(--linen);
 }
 
 .photo-credit {
@@ -1877,8 +1895,9 @@ p {
         gap: var(--space-9);
     }
 
-    .arch-about {
-        width: 100%;
+    .about-frame {
+        --offset: 20px;
+        width: calc(100% - var(--offset));
         max-width: 440px;
     }
 
