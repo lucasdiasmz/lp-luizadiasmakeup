@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Luiza Dias Makeup · Maquiagem para noivas em Divinópolis</title>
-    <meta name="description" content="Luiza Dias Makeup — Maquiagem para noivas e eventos em Divinópolis e região.">
+    <title>Luiza Dias Makeup · Maquiadora de noivas em Divinópolis-MG</title>
+    <meta name="description" content="Luiza Dias, maquiadora em Divinópolis-MG desde 2018. Maquiagem resistente para noivas, noivas civis, debutantes, formandas e madrinhas no Studio Dias ou no local do evento.">
+    <meta property="og:title" content="Luiza Dias Makeup · Maquiadora de noivas em Divinópolis-MG">
+    <meta property="og:description" content="Maquiagem resistente que dura a festa toda. Noivas, social, debutantes e curso de maquiagem no Studio Dias.">
+    <meta property="og:image" content="assets/img/noiva-buque-1100.jpg">
+    <meta property="og:locale" content="pt_BR">
     <meta name="theme-color" content="#FAF6F1">
 
     <!-- Fontes do design system (única chamada externa; a página funciona com as fontes de fallback se ela falhar) -->
@@ -13,7 +17,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="preload" as="image" href="assets/video/hero-veu-poster.jpg" fetchpriority="high">
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Luiza Dias Makeup · Studio Dias",
+        "description": "Maquiagem resistente para noivas, debutantes, formandas e eventos em Divinópolis-MG.",
+        "image": "assets/img/noiva-buque-1100.jpg",
+        "telephone": "+55 37 9966-9374",
+        "foundingDate": "2018",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Pains, 131 - Vila Cruzeiro",
+            "addressLocality": "Divinópolis",
+            "addressRegion": "MG",
+            "addressCountry": "BR"
+        },
+        "areaServed": "Divinópolis e região Centro-Oeste de Minas",
+        "sameAs": ["https://www.instagram.com/lluizamaquiadora/"]
+    }
+    </script>
 </head>
 <body>
 
@@ -37,6 +61,9 @@
     <symbol id="i-arrow" viewBox="0 0 24 24">
         <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/>
     </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M8 5.5v13l11-6.5z"/>
+    </symbol>
     <symbol id="i-star" viewBox="0 0 24 24">
         <path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3L2.9 9.4l6.3-.8z"/>
     </symbol>
@@ -44,7 +71,7 @@
 
 <!-- 1. Barra de aviso -->
 <div class="announce" role="note">
-    <p>Agenda de <span class="tbc">[2027]</span> aberta <span aria-hidden="true">·</span> Vagas limitadas por data</p>
+    <p>Especialista em maquiagem resistente <span aria-hidden="true">·</span> Desde 2018 em Divinópolis</p>
 </div>
 
 <!-- 2. Menu -->
@@ -108,8 +135,8 @@
 
                 <ul class="hero-support" aria-label="Informações de atendimento">
                     <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Divinópolis e região</li>
-                    <li>Atendimento no local do evento</li>
-                    <li>Noivas, madrinhas e formandas</li>
+                    <li>Studio Dias ou no local do evento</li>
+                    <li>Noivas, debutantes, formandas e madrinhas</li>
                 </ul>
             </div>
 
@@ -122,16 +149,16 @@
             <h2 class="stats-title reveal" id="stats-titulo">Uma história construída <em>cliente</em> por cliente.</h2>
             <dl class="stats-grid">
                 <div class="stat reveal">
-                    <dt class="stat-num"><span class="tbc">[X]</span> <span class="unit">anos</span></dt>
-                    <dd>de experiência com maquiagem</dd>
+                    <dt class="stat-num">8 <span class="unit">anos</span></dt>
+                    <dd>maquiando em Divinópolis, desde 2018</dd>
                 </div>
                 <div class="stat reveal">
-                    <dt class="stat-num">+<span class="tbc">[X]</span> <span class="unit">clientes</span></dt>
-                    <dd>atendidas em casamentos e eventos</dd>
+                    <dt class="stat-num">7 <span class="unit">de 9</span></dt>
+                    <dd>clientes citam a durabilidade nos depoimentos</dd>
                 </div>
                 <div class="stat reveal">
-                    <dt class="stat-num"><span class="tbc">[X]</span> <span class="unit">por data</span></dt>
-                    <dd>atendimento exclusivo para cada noiva</dd>
+                    <dt class="stat-num">4,3 <span class="unit">mil</span></dt>
+                    <dd>pessoas acompanham o trabalho no Instagram</dd>
                 </div>
                 <div class="stat reveal">
                     <dt class="stat-num stat-word">Divinópolis</dt>
@@ -145,20 +172,27 @@
     <!-- 6. Sobre a Luiza -->
     <section class="about section" id="sobre" aria-labelledby="sobre-titulo">
         <div class="container about-grid">
-            <figure class="arch arch-about reveal">
-                <img src="assets/img/luiza-maquiando-noiva-600.jpg"
-                     srcset="assets/img/luiza-maquiando-noiva-600.jpg 600w, assets/img/luiza-maquiando-noiva-1100.jpg 1100w"
-                     sizes="(min-width: 1024px) 440px, 80vw"
-                     width="1100" height="733" loading="lazy"
-                     alt="Luiza Dias, de vestido preto, aplicando batom com pincel em uma noiva de robe de cetim branco">
+            <figure class="about-media reveal">
+                <div class="arch arch-about">
+                    <img src="assets/img/luiza-retrato-600.jpg"
+                         srcset="assets/img/luiza-retrato-600.jpg 600w, assets/img/luiza-retrato-1100.jpg 1100w"
+                         sizes="(min-width: 1024px) 440px, 80vw"
+                         width="1100" height="1467" loading="lazy"
+                         alt="Luiza Dias, maquiadora, de blusa branca e cabelo cacheado, segurando um pincel de maquiagem">
+                </div>
+                <figcaption class="photo-credit">Foto: @fotodarafa</figcaption>
             </figure>
             <div class="about-text">
                 <p class="eyebrow reveal"><span aria-hidden="true">→</span> Quem vai cuidar de você</p>
                 <h2 class="reveal" id="sobre-titulo">Muito prazer, eu sou a <em>Luiza</em>.</h2>
-                <p class="reveal">Sou maquiadora em Divinópolis há <span class="tbc">[X]</span> anos e já acompanhei mais de <span class="tbc">[X]</span> mulheres em casamentos, formaturas e eventos. Cada uma me ensinou algo novo sobre beleza e sobre gente.</p>
+                <p class="reveal">Sou maquiadora em Divinópolis desde 2018. Meu trabalho é realçar a sua beleza sem esconder quem você é, com uma pele que aguenta horas de festa, abraços e fotos.</p>
                 <p class="reveal">Acredito que a melhor maquiagem é aquela em que você se olha no espelho e se reconhece, só que na sua versão mais radiante.</p>
+                <p class="badge reveal">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4 7.2 17.9l.9-5.4-3.9-3.8 5.4-.8z"/></svg>
+                    Especialista em maquiagem resistente
+                </p>
                 <div class="reveal">
-                    <a class="btn btn-secondary" data-instagram href="https://instagram.com/" target="_blank" rel="noopener">Conhecer minha história</a>
+                    <a class="btn btn-secondary" data-instagram href="https://www.instagram.com/lluizamaquiadora/" target="_blank" rel="noopener">Conhecer minha história</a>
                 </div>
             </div>
         </div>
@@ -176,6 +210,50 @@
         </div>
     </section>
 
+    <!-- Serviços -->
+    <section class="services section" id="servicos" aria-labelledby="servicos-titulo">
+        <div class="container">
+            <header class="section-head">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> Serviços</p>
+                <h2 class="reveal" id="servicos-titulo">Uma produção para cada <em>ocasião</em>.</h2>
+                <p class="lead reveal">Maquiagem resistente, pensada para durar do primeiro clique até a última música.</p>
+            </header>
+            <ul class="services-grid">
+                <li class="service-card reveal">
+                    <span class="service-num" aria-hidden="true">01</span>
+                    <h3>Noivas</h3>
+                    <p>Making of tranquilo, teste e uma make que dura até o fim da festa.</p>
+                </li>
+                <li class="service-card reveal">
+                    <span class="service-num" aria-hidden="true">02</span>
+                    <h3>Noiva civil</h3>
+                    <p>Produção leve e elegante para o casamento no cartório.</p>
+                </li>
+                <li class="service-card reveal">
+                    <span class="service-num" aria-hidden="true">03</span>
+                    <h3>Social</h3>
+                    <p>Para madrinhas, formandas e convidadas. Pode incluir ondas.</p>
+                </li>
+                <li class="service-card reveal">
+                    <span class="service-num" aria-hidden="true">04</span>
+                    <h3>Debutantes</h3>
+                    <p>Produção para os 15 anos, do seu jeito.</p>
+                </li>
+                <li class="service-card reveal">
+                    <span class="service-num" aria-hidden="true">05</span>
+                    <h3>Ensaios</h3>
+                    <p>Maquiagem pensada para câmera, inclusive ensaio corporativo.</p>
+                </li>
+                <li class="service-card reveal">
+                    <span class="service-num" aria-hidden="true">06</span>
+                    <h3>Curso de maquiagem</h3>
+                    <p>Aprenda técnica, acabamento, atendimento e como fotografar o seu trabalho.</p>
+                </li>
+            </ul>
+            <p class="services-note reveal">Valores e pacotes sob consulta. <a class="link-arrow" data-wa href="https://wa.me/553799669374?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener">Pedir orçamento no WhatsApp <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+    </section>
+
     <!-- 8. Atendimento para convidadas -->
     <section class="guests section section-linen" id="noivas" aria-labelledby="noivas-titulo">
         <div class="container guests-grid">
@@ -187,7 +265,7 @@
                 <p class="reveal">Elas seguem o mesmo padrão de qualidade e respeitam o estilo de cada pessoa. Montamos o cronograma juntas, para que todo mundo fique pronto no tempo certo.</p>
                 <p class="reveal">No fim, você olha em volta e vê todo mundo lindo e tranquilo, curtindo o momento com você.</p>
                 <div class="reveal">
-                    <a class="btn btn-secondary" href="#servicos">Ver como funciona</a>
+                    <a class="btn btn-secondary" href="#como-funciona">Ver como funciona</a>
                 </div>
             </div>
 
@@ -234,26 +312,66 @@
             </header>
 
             <ul class="gallery">
-                <li class="g-tall reveal">
-                    <img src="assets/img/noiva-leque-600.jpg" srcset="assets/img/noiva-leque-600.jpg 600w, assets/img/noiva-leque-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" width="600" height="900" loading="lazy"
-                         alt="Noiva de cabelo preso escondendo o rosto atrás de um leque de plumas brancas com a palavra BRIDE em pérolas; olhos com delineado marcado e brilho">
+                <li class="reveal">
+                    <figure>
+                        <img src="assets/img/noiva-buque-600.jpg" srcset="assets/img/noiva-buque-600.jpg 600w, assets/img/noiva-buque-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="1405" height="1873" loading="lazy"
+                             alt="Noiva sorridente de véu longo e tiara, com buquê de rosas brancas e maquiagem leve com batom rosado">
+                        <figcaption><span class="tag">Noiva</span></figcaption>
+                    </figure>
                 </li>
                 <li class="reveal">
-                    <img src="assets/img/noiva-espelho-600.jpg" srcset="assets/img/noiva-espelho-600.jpg 600w, assets/img/noiva-espelho-1100.jpg 853w" sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" width="600" height="900" loading="lazy"
-                         alt="Noiva de cabelo cacheado sorrindo no espelho, com maquiagem iluminada e batom rosado">
+                    <figure>
+                        <img src="assets/img/noiva-vestido-espelho-600.jpg" srcset="assets/img/noiva-vestido-espelho-600.jpg 600w, assets/img/noiva-vestido-espelho-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="1720" height="2293" loading="lazy"
+                             alt="Vestido de noiva rendado pendurado ao lado de um espelho dourado que reflete a noiva de robe, segurando o buquê">
+                        <figcaption><span class="tag">Dia da noiva</span></figcaption>
+                    </figure>
                 </li>
                 <li class="reveal">
-                    <img src="assets/img/noiva-leque-detalhe-600.jpg" srcset="assets/img/noiva-leque-detalhe-600.jpg 600w, assets/img/noiva-leque-detalhe-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" width="600" height="900" loading="lazy"
-                         alt="Detalhe em preto e branco de uma noiva de robe de renda segurando o leque BRIDE e os sapatos de salto">
+                    <figure>
+                        <img src="assets/img/noiva-espelho-600.jpg" srcset="assets/img/noiva-espelho-600.jpg 600w, assets/img/noiva-espelho-1100.jpg 853w" sizes="(min-width: 1024px) 380px, 50vw" width="853" height="1280" loading="lazy"
+                             alt="Noiva de cabelo cacheado sorrindo no espelho enquanto coloca o brinco, com maquiagem iluminada">
+                        <figcaption><span class="tag">Noiva</span></figcaption>
+                    </figure>
                 </li>
-                <li class="g-wide reveal">
-                    <img src="assets/img/luiza-maquiando-noiva-600.jpg" srcset="assets/img/luiza-maquiando-noiva-600.jpg 600w, assets/img/luiza-maquiando-noiva-1100.jpg 1100w" sizes="(min-width: 1024px) 760px, 100vw" width="600" height="400" loading="lazy"
-                         alt="Making of: Luiza finalizando o batom de uma noiva de pele negra, de robe de cetim e tiara de pérolas">
+                <li class="reveal">
+                    <figure>
+                        <img src="assets/img/noiva-renda-600.jpg" srcset="assets/img/noiva-renda-600.jpg 600w, assets/img/noiva-renda-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="1440" height="1911" loading="lazy"
+                             alt="Noiva de vestido de renda com gola alta, pele iluminada, delineado e brincos de cristal">
+                        <figcaption><span class="tag">Noiva</span></figcaption>
+                    </figure>
+                </li>
+                <li class="reveal">
+                    <figure>
+                        <img src="assets/img/bastidores-luiza-noiva-600.jpg" srcset="assets/img/bastidores-luiza-noiva-600.jpg 600w, assets/img/bastidores-luiza-noiva-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="1440" height="1800" loading="lazy"
+                             alt="Luiza aplicando pó com pincel em uma noiva de robe branco, em um making of ao ar livre">
+                        <figcaption><span class="tag">Making of</span><span class="photo-credit">Foto: @fotodarafa</span></figcaption>
+                    </figure>
+                </li>
+                <li class="reveal">
+                    <figure>
+                        <img src="assets/img/social-pele-iluminada-600.jpg" srcset="assets/img/social-pele-iluminada-600.jpg 600w, assets/img/social-pele-iluminada-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="3024" height="4032" loading="lazy"
+                             alt="Close de maquiagem social com pele iluminada, delineado e batom nude rosado">
+                        <figcaption><span class="tag">Social</span></figcaption>
+                    </figure>
+                </li>
+                <li class="reveal">
+                    <figure>
+                        <img src="assets/img/social-ondas-600.jpg" srcset="assets/img/social-ondas-600.jpg 600w, assets/img/social-ondas-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="1440" height="1546" loading="lazy"
+                             alt="Cliente de cabelo preto com ondas e maquiagem social com blush rosado e batom vermelho">
+                        <figcaption><span class="tag">Social + ondas</span></figcaption>
+                    </figure>
+                </li>
+                <li class="reveal">
+                    <figure>
+                        <img src="assets/img/artistica-brilho-600.jpg" srcset="assets/img/artistica-brilho-600.jpg 600w, assets/img/artistica-brilho-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, 50vw" width="1440" height="1080" loading="lazy"
+                             alt="Maquiagem artística com sombra verde, delineado e pedrarias nos olhos">
+                        <figcaption><span class="tag">Artística</span></figcaption>
+                    </figure>
                 </li>
             </ul>
 
             <div class="section-foot reveal">
-                <a class="btn btn-secondary" data-instagram href="https://instagram.com/" target="_blank" rel="noopener">
+                <a class="btn btn-secondary" data-instagram href="https://www.instagram.com/lluizamaquiadora/" target="_blank" rel="noopener">
                     <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
                     Ver galeria completa
                 </a>
@@ -261,50 +379,135 @@
         </div>
     </section>
 
+    <!-- Bastidores (reels do Instagram) -->
+    <section class="reels section section-linen" id="bastidores" aria-labelledby="reels-titulo">
+        <div class="container">
+            <header class="section-head">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> Bastidores</p>
+                <h2 class="reveal" id="reels-titulo">Veja o dia da noiva de <em>perto</em>.</h2>
+                <p class="lead reveal">Vídeos curtos do Instagram mostrando a preparação e o Studio Dias.</p>
+            </header>
+            <ul class="reels-grid">
+                <li class="reveal">
+                    <a class="reel-card" href="https://www.instagram.com/lluizamaquiadora/reel/DWAC3sslEDw/" target="_blank" rel="noopener" aria-label="Assistir no Instagram: Making of de uma noiva">
+                        <span class="reel-thumb">
+                            <img src="assets/img/noiva-espelho-600.jpg" width="600" height="1067" loading="lazy" alt="">
+                            <span class="reel-play" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+                        </span>
+                        <span class="reel-title">Making of de uma noiva</span>
+                        <span class="reel-text">Da pele ao batom, a preparação completa.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a class="reel-card" href="https://www.instagram.com/lluizamaquiadora/reel/DWBs7ZwgWYr/" target="_blank" rel="noopener" aria-label="Assistir no Instagram: Noiva civil">
+                        <span class="reel-thumb">
+                            <img src="assets/img/reel-noiva-civil-600.jpg" width="600" height="1067" loading="lazy" alt="">
+                            <span class="reel-play" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+                        </span>
+                        <span class="reel-title">Noiva civil</span>
+                        <span class="reel-text">Produção leve e elegante para o cartório.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a class="reel-card" href="https://www.instagram.com/lluizamaquiadora/reel/DdKoCURx94D/" target="_blank" rel="noopener" aria-label="Assistir no Instagram: Conheça o Studio Dias">
+                        <span class="reel-thumb">
+                            <img src="assets/img/studio-dias-600.jpg" width="600" height="1067" loading="lazy" alt="">
+                            <span class="reel-play" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+                        </span>
+                        <span class="reel-title">Conheça o Studio Dias</span>
+                        <span class="reel-text">Um tour pelo espaço novo.</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <!-- 10. Depoimentos -->
-    <section class="testimonials section section-linen" id="depoimentos" aria-labelledby="depo-titulo">
+    <section class="testimonials section" id="depoimentos" aria-labelledby="depo-titulo">
         <div class="container">
             <header class="section-head">
                 <p class="eyebrow reveal"><span aria-hidden="true">→</span> O que elas contam depois</p>
                 <h2 class="reveal" id="depo-titulo">O resultado aparece nas fotos. O carinho fica na <em>memória</em>.</h2>
             </header>
 
-            <p class="placeholder-note reveal"><span class="tbc">[3 a 5 prints de mensagens ou avaliações reais de clientes, com autorização delas]</span></p>
+            <div class="testi-layout">
+                <figure class="durability reveal" role="img" aria-label="Gráfico: 7 de 9 clientes que enviaram feedback citaram a durabilidade da maquiagem.">
+                    <svg class="donut" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+                        <circle class="donut-track" cx="60" cy="60" r="52"/>
+                        <circle class="donut-value" cx="60" cy="60" r="52" pathLength="100" style="--pct: 78"/>
+                    </svg>
+                    <div class="donut-label" aria-hidden="true"><strong>7 de 9</strong><span>clientes</span></div>
+                    <figcaption>falam espontaneamente que a make <em>durou a festa toda</em>.</figcaption>
+                </figure>
+                <ul class="testi-grid">
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                    <blockquote><p>Amei a maquiagem! Foi perfeita, impecável! Durou a festa todinha e até no outro dia! Obrigada por tudo.</p></blockquote>
+                    <p class="testi-source">Cliente · mensagem no WhatsApp</p>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                    <blockquote><p>Eu quem agradeço seu trabalho impecável. Eu amei, a make durou até de manhã, estava ainda linda.</p></blockquote>
+                    <p class="testi-source">Cliente · mensagem no WhatsApp</p>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                    <blockquote><p>Eu amei muito a make, ela ficou intacta até o final da festa, todos elogiaram muito! Com certeza voltarei mais vezes, muito obrigada!</p></blockquote>
+                    <p class="testi-source">Cliente · mensagem no WhatsApp</p>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                    <blockquote><p>Amei seu trabalho, fiquei completamente encantada. Obrigada pela atenção em todos os detalhes e por esse resultado incrível!</p></blockquote>
+                    <p class="testi-source">Cliente · mensagem no WhatsApp</p>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                    <blockquote><p>Eu adorei a make e durou até de madrugada, quando a festa acabou. Mesmo precisando fazer com maior antecedência, deu tudo certo.</p></blockquote>
+                    <p class="testi-source">Cliente · mensagem no WhatsApp</p>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                    <blockquote><p>Eu amei a make, durou muito e ficou do jeitinho que eu queria. Além do atendimento, que foi impecável também. Vou marcar mais vezes e indicar para outras pessoas.</p></blockquote>
+                    <p class="testi-source">Cliente · mensagem no WhatsApp</p>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <ul class="testi-grid" aria-label="Espaço reservado para prints de depoimentos">
-                <li class="testi-card reveal">
-                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas">
-                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-                    </div>
-                    <div class="chat" aria-hidden="true">
-                        <span class="bubble in w80"></span><span class="bubble in w60"></span>
-                        <span class="bubble out w70"></span><span class="bubble in w90"></span>
-                    </div>
-                </li>
-                <li class="testi-card reveal">
-                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas">
-                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-                    </div>
-                    <div class="chat" aria-hidden="true">
-                        <span class="bubble in w90"></span><span class="bubble out w50"></span>
-                        <span class="bubble in w70"></span><span class="bubble in w60"></span>
-                    </div>
-                </li>
-                <li class="testi-card reveal">
-                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas">
-                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-                    </div>
-                    <div class="chat" aria-hidden="true">
-                        <span class="bubble in w60"></span><span class="bubble in w90"></span>
-                        <span class="bubble out w80"></span><span class="bubble in w50"></span>
-                    </div>
-                </li>
-            </ul>
+    <!-- Studio Dias + curso -->
+    <section class="studio section section-linen" id="studio" aria-labelledby="studio-titulo">
+        <div class="container studio-grid">
+            <figure class="studio-media reveal">
+                <img src="assets/img/studio-dias-600.jpg" srcset="assets/img/studio-dias-600.jpg 600w, assets/img/studio-dias-1100.jpg 720w" sizes="(min-width: 1024px) 380px, 80vw" width="720" height="1280" loading="lazy"
+                     alt="Recepção do Studio Dias com poltronas bege, parede clara com iluminação indireta e o logo SD Studio Dias em dourado">
+            </figure>
+            <div class="studio-text">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> Studio Dias</p>
+                <h2 class="reveal" id="studio-titulo">Um espaço para você se arrumar com <em>calma</em>.</h2>
+                <p class="reveal">Hoje atendo no Studio Dias, um espaço pensado para você se arrumar com calma e conforto. Cada produção começa entendendo o seu estilo e o que você imagina para o seu dia.</p>
+                <address class="address reveal">
+                    <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                    <span>Rua Pains, 131 · Vila Cruzeiro<br>Divinópolis-MG <small>(quase esquina com a 7 de Setembro)</small></span>
+                </address>
+                <div class="reveal">
+                    <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=Rua%20Pains%2C%20131%2C%20Vila%20Cruzeiro%2C%20Divin%C3%B3polis%20-%20MG" target="_blank" rel="noopener">Ver no mapa <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+
+                <div class="course-card reveal">
+                    <h3>Curso de maquiagem profissional</h3>
+                    <p>Aprenda técnica, acabamento, atendimento e como fotografar o seu trabalho. As inscrições são pelo direct do Instagram.</p>
+                    <a class="btn btn-secondary" data-instagram href="https://www.instagram.com/lluizamaquiadora/" target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+                        Quero saber do curso
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- 11. Como funciona -->
-    <section class="steps section" id="servicos" aria-labelledby="steps-titulo">
+    <section class="steps section" id="como-funciona" aria-labelledby="steps-titulo">
         <div class="container">
             <header class="section-head">
                 <p class="eyebrow reveal"><span aria-hidden="true">→</span> A experiência Luiza Dias</p>
@@ -358,16 +561,16 @@
                 <path d="M100 113s-6-3.6-6-7.6a3.2 3.2 0 0 1 6-1.6 3.2 3.2 0 0 1 6 1.6c0 4-6 7.6-6 7.6z" class="cal-heart"/>
             </svg>
 
-            <p class="eyebrow reveal">Agenda <span class="tbc">[2027]</span></p>
+            <p class="eyebrow reveal">Agenda aberta</p>
             <h2 class="reveal" id="cta-titulo">A sua data ainda está <em>disponível</em>?</h2>
-            <p class="lead reveal">A agenda de <span class="tbc">[2027]</span> já está aberta e as datas são limitadas. Me conta quando e onde vai ser o seu evento, e eu te envio a disponibilidade e o orçamento completo.</p>
+            <p class="lead reveal">A agenda já está aberta e as datas são limitadas. Me conta quando e onde vai ser o seu evento, e eu te envio a disponibilidade e o orçamento completo.</p>
             <div class="reveal">
                 <a class="btn btn-primary btn-lg" data-wa href="https://wa.me/553799669374?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener">
                     <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
                     Consultar minha data no WhatsApp
                 </a>
             </div>
-            <p class="support reveal">Respondo em até <span class="tbc">[24 horas]</span> nos dias úteis. Atendimentos todos os dias, inclusive fins de semana e feriados.</p>
+            <p class="support reveal">Respondo em até 24 horas nos dias úteis. Atendimentos todos os dias, inclusive fins de semana e feriados.</p>
         </div>
     </section>
 
@@ -401,7 +604,7 @@
             <ul class="contact-list">
                 <li>
                     <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
-                    <span>Instagram: <a data-instagram href="https://instagram.com/" target="_blank" rel="noopener"><span class="tbc">[@usuario]</span></a></span>
+                    <span>Instagram: <a data-instagram href="https://www.instagram.com/lluizamaquiadora/" target="_blank" rel="noopener">@lluizamaquiadora</a></span>
                 </li>
                 <li>
                     <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
@@ -409,13 +612,14 @@
                 </li>
                 <li>
                     <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
-                    <span>Endereço do estúdio: <span class="tbc">[se houver]</span></span>
+                    <span>Studio Dias: <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Pains%2C%20131%2C%20Vila%20Cruzeiro%2C%20Divin%C3%B3polis%20-%20MG" target="_blank" rel="noopener">Rua Pains, 131 · Vila Cruzeiro, Divinópolis-MG</a></span>
                 </li>
             </ul>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>© <span class="tbc">[2026]</span> Luiza Dias Makeup. Todos os direitos reservados. · Divinópolis · MG</p>
+        <p>© 2026 Luiza Dias Makeup. Todos os direitos reservados. · Divinópolis · MG</p>
+        <p class="footer-credit">Algumas fotos: @fotodarafa</p>
     </div>
 </footer>
 
@@ -456,6 +660,6 @@
     </form>
 </dialog>
 
-<script src="script.js?v=4" defer></script>
+<script src="script.js?v=5" defer></script>
 </body>
 </html>
