@@ -97,11 +97,9 @@
 
     /* ---------- Animações de entrada ---------- */
     var animados = document.querySelectorAll(".reveal, .schedule, .calendar-art");
-    var steps = document.querySelector(".steps-list");
 
     if (reduceMotion || !("IntersectionObserver" in window)) {
         animados.forEach(function (el) { el.classList.add("is-visible"); });
-        if (steps) steps.style.setProperty("--progress", 1);
     } else {
         var revealObserver = new IntersectionObserver(function (entries, obs) {
             entries.forEach(function (entry) {
@@ -118,14 +116,6 @@
             revealObserver.observe(el);
         });
 
-        if (steps) {
-            new IntersectionObserver(function (entries, obs) {
-                if (entries[0].isIntersecting) {
-                    steps.style.setProperty("--progress", 1);
-                    obs.disconnect();
-                }
-            }, { threshold: 0.4 }).observe(steps);
-        }
     }
 
     /* ---------- Pop-up de agendamento ---------- */

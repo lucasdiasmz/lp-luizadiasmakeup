@@ -19,8 +19,7 @@ Seções, na ordem em que aparecem:
 7. Bastidores (reels do Instagram)
 8. Depoimentos de clientes
 9. Studio Dias e curso de maquiagem
-10. Como funciona
-11. Chamada final para o WhatsApp
+10. Chamada final para o WhatsApp
 
 Todos os botões de agendamento abrem o WhatsApp com uma mensagem pronta. O pop-up "Consultar data" envia nome, telefone e data do evento já preenchidos.
 
