@@ -1017,25 +1017,25 @@ p {
     color: var(--taupe);
 }
 
-/* ---------- 9. Portfólio (masonry em colunas) ---------- */
+/* ---------- 9. Portfólio (grade uniforme 3:4, foco ajustado por foto) ---------- */
 .gallery {
-    columns: 2;
-    column-gap: var(--space-2);
-}
-
-.gallery li {
-    break-inside: avoid;
-    margin-bottom: var(--space-2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2);
 }
 
 .gallery figure {
     position: relative;
     overflow: hidden;
+    aspect-ratio: 3 / 4;
     background: var(--linen);
 }
 
 .gallery img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--pos, 50% 35%);
     transition: transform 0.8s var(--ease);
 }
 
@@ -1772,11 +1772,8 @@ p {
     }
 
     .gallery {
-        column-gap: var(--space-3);
-    }
-
-    .gallery li {
-        margin-bottom: var(--space-3);
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-3);
     }
 
     .services-grid {
@@ -1937,10 +1934,6 @@ p {
 
     .schedule {
         padding: var(--space-6);
-    }
-
-    .gallery {
-        columns: 3;
     }
 
     .services-grid {
