@@ -1165,19 +1165,34 @@ p {
 }
 
 .durability {
-    position: relative;
     display: grid;
     grid-template-columns: 132px 1fr;
     align-items: center;
-    gap: var(--space-5);
+    gap: var(--space-3) var(--space-5);
     padding: var(--space-5);
     background: var(--linen);
     border-radius: var(--radius-sm);
 }
 
-.donut {
+.durability .eyebrow {
+    grid-column: 1 / -1;
+}
+
+/* Anel e número empilhados na mesma célula: o número fica sempre centralizado */
+.donut-wrap {
+    display: grid;
+    place-items: center;
     width: 132px;
-    height: 132px;
+    aspect-ratio: 1;
+}
+
+.donut-wrap > * {
+    grid-area: 1 / 1;
+}
+
+.donut {
+    width: 100%;
+    height: 100%;
     transform: rotate(-90deg);
 }
 
@@ -1203,14 +1218,10 @@ p {
 }
 
 .donut-label {
-    position: absolute;
-    left: var(--space-5);
-    top: 50%;
     display: grid;
-    place-items: center;
-    width: 132px;
-    transform: translateY(-50%);
-    line-height: 1.1;
+    justify-items: center;
+    gap: 2px;
+    line-height: 1;
     text-align: center;
 }
 
@@ -1221,10 +1232,15 @@ p {
 }
 
 .donut-label span {
-    font-size: 12px;
-    letter-spacing: 0.14em;
+    font-size: 11px;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--taupe);
+}
+
+/* Elemento fixo: entra só com opacidade (deslocamento faria ele "pular" ao rolar) */
+.js .reveal.reveal-fade {
+    transform: none;
 }
 
 .durability figcaption {
@@ -1885,34 +1901,44 @@ p {
         max-width: 960px;
     }
 
+    /* Faixa larga acima dos depoimentos (sem sticky: rola junto com a página) */
     .testi-layout {
-        grid-template-columns: 300px 1fr;
-        align-items: start;
-        gap: var(--space-7);
+        gap: var(--space-6);
     }
 
     .durability {
-        position: sticky;
-        top: calc(var(--header-h) + var(--space-6));
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-        padding: var(--space-6);
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: auto auto;
+        column-gap: var(--space-7);
+        row-gap: var(--space-2);
+        padding: var(--space-6) var(--space-7);
     }
 
-    .durability .donut,
-    .durability .donut-label {
-        width: 180px;
+    .durability .donut-wrap {
+        grid-row: 1 / span 2;
+        width: 160px;
     }
 
-    .durability .donut {
-        height: 180px;
+    .durability .eyebrow {
+        grid-column: 2;
+        align-self: end;
     }
 
-    .donut-label {
-        left: 50%;
-        top: calc(var(--space-6) + 90px);
-        transform: translate(-50%, -50%);
+    .durability figcaption {
+        grid-column: 2;
+        align-self: start;
+        max-width: 30ch;
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .durability .donut-label strong {
+        font-size: 36px;
+    }
+
+    .testi-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-5);
     }
 
     .studio-grid {
