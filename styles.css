@@ -485,11 +485,45 @@ p {
 
 /* ---------- 3. Hero ---------- */
 .hero {
-    padding-block: var(--space-7) var(--space-8);
+    position: relative;
+    isolation: isolate;
+    --hero-band: clamp(240px, 40svh, 400px);
+    padding-block: calc(var(--hero-band) - var(--space-3)) var(--space-8);
     overflow: hidden;
+    background: var(--pearl);
+}
+
+/* Vídeo de fundo */
+/* Celular/tablet: o vídeo ocupa uma faixa no topo e se dissolve no fundo pérola */
+.hero-bg {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: var(--hero-band);
+    z-index: -1;
+    background: var(--linen) url("assets/video/hero-veu-poster.jpg") 78% center / cover no-repeat;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 78% center; /* mantém a penteadeira visível no celular */
+}
+
+/* Véu de leitura: garante contraste do texto sobre o vídeo */
+.hero-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 -2px 0; /* cobre a borda de 1px do vídeo */
+    background: linear-gradient(180deg,
+        rgba(250, 246, 241, 0) 0%,
+        rgba(250, 246, 241, 0) 45%,
+        rgba(250, 246, 241, 0.75) 78%,
+        var(--pearl) 100%);
 }
 
 .hero-grid {
+    position: relative;
     display: grid;
     gap: var(--space-7);
 }
@@ -497,6 +531,44 @@ p {
 .hero-text {
     display: grid;
     gap: var(--space-5);
+    max-width: 620px;
+}
+
+.hero-video-toggle {
+    position: absolute;
+    right: var(--space-4);
+    top: var(--space-4);
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    background: rgba(250, 246, 241, 0.8);
+    color: var(--ink);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-video-toggle:hover {
+    background: var(--pearl);
+    border-color: var(--sand);
+}
+
+.hero-video-toggle .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.hero-video-toggle .icon-play,
+.hero-video-toggle[aria-pressed="true"] .icon-pause {
+    display: none;
+}
+
+.hero-video-toggle[aria-pressed="true"] .icon-play {
+    display: block;
 }
 
 .hero-text h1 {
@@ -551,12 +623,6 @@ p {
     color: var(--champagne);
 }
 
-.hero-media {
-    position: relative;
-    justify-self: center;
-    width: min(100%, 420px);
-}
-
 .arch {
     overflow: hidden;
     border-radius: var(--radius-arch);
@@ -567,49 +633,6 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.arch-hero {
-    position: relative;
-    aspect-ratio: 3 / 4;
-    border: 1px solid var(--sand);
-    padding: 10px 10px 0;
-    background: var(--pearl);
-}
-
-.arch-hero img {
-    border-radius: var(--radius-arch);
-    object-position: 60% 30%;
-}
-
-/* Tipografia decorativa vazada (herdada do template de referência) */
-.outline-word {
-    position: absolute;
-    left: 50%;
-    bottom: -0.18em;
-    z-index: 1;
-    transform: translateX(-50%);
-    font-family: var(--font-body);
-    font-size: clamp(96px, 28vw, 180px);
-    font-weight: 300;
-    line-height: 0.9;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(28, 24, 23, 0.22);
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-}
-
-.pearls {
-    position: absolute;
-    bottom: 6%;
-    left: -14%;
-    z-index: 2;
-    width: 40%;
-    color: var(--champagne);
-    transform: rotate(12deg);
 }
 
 /* ---------- 4. Números ---------- */
@@ -1490,7 +1513,34 @@ p {
     }
 
     .hero {
-        padding-block: var(--space-9) var(--space-10);
+        display: grid;
+        align-items: center;
+        min-height: min(900px, calc(100svh - var(--header-h) - 34px));
+        padding-block: var(--space-9);
+    }
+
+    .hero-bg {
+        inset: 0;
+        height: auto;
+        background-position: center;
+    }
+
+    .hero-bg::after {
+        background: linear-gradient(90deg,
+            rgba(250, 246, 241, 0.94) 0%,
+            rgba(250, 246, 241, 0.82) 38%,
+            rgba(250, 246, 241, 0.2) 62%,
+            rgba(250, 246, 241, 0) 78%);
+    }
+
+    .hero-video {
+        object-position: center;
+    }
+
+    .hero-video-toggle {
+        top: auto;
+        right: var(--space-6);
+        bottom: var(--space-6);
     }
 
     /* Menu horizontal */
@@ -1547,17 +1597,6 @@ p {
     .nav a:hover::after,
     .nav a[aria-current="true"]::after {
         transform: scaleX(1);
-    }
-
-    .hero-grid {
-        grid-template-columns: 1.15fr 0.85fr;
-        align-items: center;
-        gap: var(--space-9);
-    }
-
-    .hero-media {
-        width: 100%;
-        max-width: 460px;
     }
 
     .about-grid {

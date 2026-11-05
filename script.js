@@ -228,4 +228,61 @@
             if (input.getAttribute("aria-invalid") === "true") setErro(input, "");
         });
     });
+
+    /* ---------- Vídeo de fundo da hero ---------- */
+    var video = document.querySelector(".hero-video");
+    var videoBtn = document.querySelector(".hero-video-toggle");
+
+    if (video && videoBtn) {
+        var economiaDados = navigator.connection && navigator.connection.saveData;
+        var pausadoPeloUsuario = reduceMotion || economiaDados;
+        var heroVisivel = true;
+
+        function atualizarBotao() {
+            var pausado = video.paused;
+            videoBtn.setAttribute("aria-pressed", String(pausado));
+            videoBtn.setAttribute("aria-label", pausado ? "Reproduzir vídeo de fundo" : "Pausar vídeo de fundo");
+        }
+
+        function tocar() {
+            var p = video.play();
+            if (p && p.catch) p.catch(function () { atualizarBotao(); }); // autoplay bloqueado (ex.: modo pouca energia)
+        }
+
+        video.muted = true; // exigido para autoplay no iOS/Chrome
+        if (pausadoPeloUsuario) {
+            video.removeAttribute("autoplay");
+            video.pause();
+        } else {
+            tocar();
+        }
+
+        videoBtn.hidden = false;
+        video.addEventListener("play", atualizarBotao);
+        video.addEventListener("pause", atualizarBotao);
+        atualizarBotao();
+
+        videoBtn.addEventListener("click", function () {
+            if (video.paused) {
+                pausadoPeloUsuario = false;
+                tocar();
+            } else {
+                pausadoPeloUsuario = true;
+                video.pause();
+            }
+        });
+
+        // Economiza bateria: pausa quando a hero sai da tela e retoma ao voltar
+        if ("IntersectionObserver" in window) {
+            new IntersectionObserver(function (entries) {
+                heroVisivel = entries[0].isIntersecting;
+                if (!heroVisivel) video.pause();
+                else if (!pausadoPeloUsuario) tocar();
+            }, { threshold: 0.1 }).observe(video);
+        }
+
+        document.addEventListener("visibilitychange", function () {
+            if (!document.hidden && heroVisivel && !pausadoPeloUsuario) tocar();
+        });
+    }
 })();
