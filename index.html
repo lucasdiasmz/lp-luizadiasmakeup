@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luiza Dias Makeup · Maquiagem para noivas em Divinópolis</title>
+    <meta name="description" content="Luiza Dias Makeup — Maquiagem para noivas e eventos em Divinópolis e região.">
+    <meta name="theme-color" content="#FAF6F1">
+
+    <!-- Fontes do design system (única chamada externa; a página funciona com as fontes de fallback se ela falhar) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="assets/img/noiva-espelho-600.jpg" imagesrcset="assets/img/noiva-espelho-600.jpg 600w, assets/img/noiva-espelho-1100.jpg 853w" imagesizes="(min-width: 1024px) 460px, 80vw">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1A8.5 8.5 0 1 1 8 19.3l-4.4 1.1z"/>
+        <path fill="currentColor" d="M9.1 7.6c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .6.4l.8 1.8c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5.6 1 1.4 1.8 2.4 2.4.2.1.4.1.5 0l.7-.8c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .5-.2 1.3-.9 1.7-.6.4-1.5.6-3.4-.2-2.3-1-3.9-3.2-4.2-3.7-.3-.5-1-1.6-1-2.8s.6-1.9 1-2.4z"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/>
+        <circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3L2.9 9.4l6.3-.8z"/>
+    </symbol>
+</svg>
+
+<!-- 1. Barra de aviso -->
+<div class="announce" role="note">
+    <p>Agenda de <span class="tbc">[2027]</span> aberta <span aria-hidden="true">·</span> Vagas limitadas por data</p>
+</div>
+
+<!-- 2. Menu -->
+<header class="site-header" id="topo">
+    <div class="container header-inner">
+        <a class="logo" href="#inicio" aria-label="Luiza Dias Makeup, voltar ao início">
+            <span class="logo-name">Luiza Dias</span>
+            <span class="logo-sub">Makeup</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="menu-principal" aria-label="Menu principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#noivas">Noivas</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="btn btn-primary btn-sm" type="button" data-open-dialog>Consultar data</button>
+        </nav>
+    </div>
+</header>
+
+<main id="conteudo">
+
+    <!-- 3. Hero -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <p class="eyebrow">Maquiadora em Divinópolis · Noivas e eventos</p>
+                <h1 id="hero-titulo">Uma beleza que <em>realça</em> quem você já é.</h1>
+                <p class="lead">Maquiagem e preparação para o seu grande dia, feitas com calma, cuidado e atenção a cada detalhe. Você só precisa aproveitar.</p>
+
+                <div class="hero-actions">
+                    <div class="cta-block">
+                        <a class="btn btn-primary" data-wa href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener">
+                            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                            Consultar minha data
+                        </a>
+                        <p class="microcopy">Resposta em até 24h · Sem compromisso</p>
+                    </div>
+                    <a class="btn btn-secondary" href="#portfolio">Ver trabalhos</a>
+                </div>
+
+                <ul class="hero-support" aria-label="Informações de atendimento">
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Divinópolis e região</li>
+                    <li>Atendimento no local do evento</li>
+                    <li>Noivas, madrinhas e formandas</li>
+                </ul>
+            </div>
+
+            <div class="hero-media reveal">
+                <span class="outline-word" aria-hidden="true">Luiza</span>
+                <figure class="arch arch-hero">
+                    <img src="assets/img/noiva-espelho-600.jpg"
+                         srcset="assets/img/noiva-espelho-600.jpg 600w, assets/img/noiva-espelho-1100.jpg 853w"
+                         sizes="(min-width: 1024px) 460px, 80vw"
+                         width="853" height="1280"
+                         alt="Noiva sorrindo diante do espelho enquanto coloca o brinco, com maquiagem natural e tiara de pérolas no cabelo cacheado"
+                         fetchpriority="high">
+                </figure>
+                <!-- Ornamento: fio de pérolas -->
+                <svg class="pearls" viewBox="0 0 220 60" aria-hidden="true" focusable="false">
+                    <path d="M4 10 Q110 70 216 10" fill="none" stroke="currentColor" stroke-width="1"/>
+                    <g fill="#FFFFFF" stroke="currentColor" stroke-width="1">
+                        <circle cx="20" cy="17" r="5"/><circle cx="42" cy="25" r="5.5"/><circle cx="66" cy="31" r="6"/>
+                        <circle cx="92" cy="35" r="6.5"/><circle cx="118" cy="36" r="7"/><circle cx="144" cy="33" r="6.5"/>
+                        <circle cx="168" cy="28" r="6"/><circle cx="190" cy="21" r="5.5"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Faixa de números -->
+    <section class="stats" id="numeros" aria-labelledby="stats-titulo">
+        <div class="container">
+            <h2 class="stats-title reveal" id="stats-titulo">Uma história construída <em>cliente</em> por cliente.</h2>
+            <dl class="stats-grid">
+                <div class="stat reveal">
+                    <dt class="stat-num"><span class="tbc">[X]</span> <span class="unit">anos</span></dt>
+                    <dd>de experiência com maquiagem</dd>
+                </div>
+                <div class="stat reveal">
+                    <dt class="stat-num">+<span class="tbc">[X]</span> <span class="unit">clientes</span></dt>
+                    <dd>atendidas em casamentos e eventos</dd>
+                </div>
+                <div class="stat reveal">
+                    <dt class="stat-num"><span class="tbc">[X]</span> <span class="unit">por data</span></dt>
+                    <dd>atendimento exclusivo para cada noiva</dd>
+                </div>
+                <div class="stat reveal">
+                    <dt class="stat-num stat-word">Divinópolis</dt>
+                    <dd>e cidades da região Centro-Oeste de Minas</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- 5. Manifesto (única seção escura) -->
+    <section class="manifesto" id="manifesto" aria-labelledby="manifesto-titulo">
+        <div class="container manifesto-grid">
+            <figure class="manifesto-media reveal">
+                <img src="assets/img/noiva-veu-perolas-600.jpg"
+                     srcset="assets/img/noiva-veu-perolas-600.jpg 600w, assets/img/noiva-veu-perolas-1100.jpg 1100w"
+                     sizes="(min-width: 1024px) 480px, 100vw"
+                     width="1100" height="1650" loading="lazy"
+                     alt="Retrato em preto e branco de uma noiva sob o véu, de olhos fechados, segurando um colar de pérolas junto ao rosto">
+            </figure>
+            <div class="manifesto-text">
+                <h2 class="reveal" id="manifesto-titulo">Mais do que uma maquiagem <em>bonita</em>.</h2>
+                <p class="reveal">Quando você me escolhe, escolhe também quem vai estar ao seu lado nas horas que antecedem um dos dias mais especiais da sua vida.</p>
+                <p class="reveal">Eu chego cedo, organizo tudo com calma e acompanho cada etapa da sua preparação. Se bater o nervosismo, estou ali. Se algo precisar de ajuste, eu resolvo antes que você perceba.</p>
+                <blockquote class="manifesto-quote reveal">
+                    <p>A maquiagem é o que aparece nas fotos. O cuidado é o que você vai lembrar.</p>
+                </blockquote>
+                <div class="reveal">
+                    <a class="btn btn-primary" data-wa href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                        Quero esse cuidado no meu dia
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Sobre a Luiza -->
+    <section class="about section" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container about-grid">
+            <figure class="arch arch-about reveal">
+                <img src="assets/img/luiza-maquiando-noiva-600.jpg"
+                     srcset="assets/img/luiza-maquiando-noiva-600.jpg 600w, assets/img/luiza-maquiando-noiva-1100.jpg 1100w"
+                     sizes="(min-width: 1024px) 440px, 80vw"
+                     width="1100" height="733" loading="lazy"
+                     alt="Luiza Dias, de vestido preto, aplicando batom com pincel em uma noiva de robe de cetim branco">
+            </figure>
+            <div class="about-text">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> Quem vai cuidar de você</p>
+                <h2 class="reveal" id="sobre-titulo">Muito prazer, eu sou a <em>Luiza</em>.</h2>
+                <p class="reveal">Sou maquiadora em Divinópolis há <span class="tbc">[X]</span> anos e já acompanhei mais de <span class="tbc">[X]</span> mulheres em casamentos, formaturas e eventos. Cada uma me ensinou algo novo sobre beleza e sobre gente.</p>
+                <p class="reveal">Acredito que a melhor maquiagem é aquela em que você se olha no espelho e se reconhece, só que na sua versão mais radiante.</p>
+                <div class="reveal">
+                    <a class="btn btn-secondary" data-instagram href="https://instagram.com/" target="_blank" rel="noopener">Conhecer minha história</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Faixa de palavras -->
+    <section class="marquee" aria-label="Exclusividade, Cuidado, Pontualidade, Naturalidade, Durabilidade, Divinópolis">
+        <div class="marquee-track" aria-hidden="true">
+            <ul class="marquee-list">
+                <li>Exclusividade</li><li>Cuidado</li><li>Pontualidade</li><li>Naturalidade</li><li>Durabilidade</li><li>Divinópolis</li>
+            </ul>
+            <ul class="marquee-list">
+                <li>Exclusividade</li><li>Cuidado</li><li>Pontualidade</li><li>Naturalidade</li><li>Durabilidade</li><li>Divinópolis</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 8. Atendimento para convidadas -->
+    <section class="guests section section-linen" id="noivas" aria-labelledby="noivas-titulo">
+        <div class="container guests-grid">
+            <div class="guests-text">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> Como organizo o seu dia</p>
+                <h2 class="reveal" id="noivas-titulo">Eu cuido de você. Minha equipe cuida de quem você <em>ama</em>.</h2>
+                <p class="lead reveal">Mãe, madrinhas e damas prontas no horário, sem correria.</p>
+                <p class="reveal">No dia do casamento, minha atenção fica toda em você. Enquanto preparo a noiva, profissionais de confiança, que já trabalham comigo, atendem as pessoas mais próximas.</p>
+                <p class="reveal">Elas seguem o mesmo padrão de qualidade e respeitam o estilo de cada pessoa. Montamos o cronograma juntas, para que todo mundo fique pronto no tempo certo.</p>
+                <p class="reveal">No fim, você olha em volta e vê todo mundo lindo e tranquilo, curtindo o momento com você.</p>
+                <div class="reveal">
+                    <a class="btn btn-secondary" href="#servicos">Ver como funciona</a>
+                </div>
+            </div>
+
+            <!-- Gráfico: cronograma em paralelo -->
+            <figure class="schedule reveal" role="img" aria-label="Gráfico de cronograma: enquanto Luiza prepara a noiva, a equipe atende ao mesmo tempo a mãe, as madrinhas e as damas, e todas terminam juntas, no mesmo horário.">
+                <div class="schedule-legend" aria-hidden="true">
+                    <span><i class="dot dot-luiza"></i>Luiza</span>
+                    <span><i class="dot dot-team"></i>Equipe</span>
+                </div>
+                <div class="schedule-body">
+                <ol class="schedule-rows" aria-hidden="true">
+                    <li class="row-main">
+                        <span class="row-label">Noiva</span>
+                        <span class="row-track"><span class="bar bar-luiza" style="--from: 0%; --to: 100%;"></span></span>
+                    </li>
+                    <li>
+                        <span class="row-label">Mãe</span>
+                        <span class="row-track"><span class="bar bar-team" style="--from: 38%; --to: 100%;"></span></span>
+                    </li>
+                    <li>
+                        <span class="row-label">Madrinhas</span>
+                        <span class="row-track"><span class="bar bar-team" style="--from: 8%; --to: 100%;"></span></span>
+                    </li>
+                    <li>
+                        <span class="row-label">Damas</span>
+                        <span class="row-track"><span class="bar bar-team" style="--from: 62%; --to: 100%;"></span></span>
+                    </li>
+                </ol>
+                <div class="schedule-finish" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="icon"><path fill="currentColor" d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7.5 2.5c0 5.4-7.5 10-7.5 10z"/></svg>
+                </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <!-- 9. Portfólio -->
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-titulo">
+        <div class="container">
+            <header class="section-head">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> Clientes reais</p>
+                <h2 class="reveal" id="portfolio-titulo">Cada noiva com a sua própria <em>beleza</em>.</h2>
+                <p class="lead reveal">Tons de pele, idades e estilos diferentes. Veja se você se identifica com alguma.</p>
+            </header>
+
+            <ul class="gallery">
+                <li class="g-tall reveal">
+                    <img src="assets/img/noiva-leque-600.jpg" srcset="assets/img/noiva-leque-600.jpg 600w, assets/img/noiva-leque-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" width="600" height="900" loading="lazy"
+                         alt="Noiva de cabelo preso escondendo o rosto atrás de um leque de plumas brancas com a palavra BRIDE em pérolas; olhos com delineado marcado e brilho">
+                </li>
+                <li class="reveal">
+                    <img src="assets/img/noiva-espelho-600.jpg" srcset="assets/img/noiva-espelho-600.jpg 600w, assets/img/noiva-espelho-1100.jpg 853w" sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" width="600" height="900" loading="lazy"
+                         alt="Noiva de cabelo cacheado sorrindo no espelho, com maquiagem iluminada e batom rosado">
+                </li>
+                <li class="reveal">
+                    <img src="assets/img/noiva-leque-detalhe-600.jpg" srcset="assets/img/noiva-leque-detalhe-600.jpg 600w, assets/img/noiva-leque-detalhe-1100.jpg 1100w" sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" width="600" height="900" loading="lazy"
+                         alt="Detalhe em preto e branco de uma noiva de robe de renda segurando o leque BRIDE e os sapatos de salto">
+                </li>
+                <li class="g-wide reveal">
+                    <img src="assets/img/luiza-maquiando-noiva-600.jpg" srcset="assets/img/luiza-maquiando-noiva-600.jpg 600w, assets/img/luiza-maquiando-noiva-1100.jpg 1100w" sizes="(min-width: 1024px) 760px, 100vw" width="600" height="400" loading="lazy"
+                         alt="Making of: Luiza finalizando o batom de uma noiva de pele negra, de robe de cetim e tiara de pérolas">
+                </li>
+            </ul>
+
+            <div class="section-foot reveal">
+                <a class="btn btn-secondary" data-instagram href="https://instagram.com/" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+                    Ver galeria completa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Depoimentos -->
+    <section class="testimonials section section-linen" id="depoimentos" aria-labelledby="depo-titulo">
+        <div class="container">
+            <header class="section-head">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> O que elas contam depois</p>
+                <h2 class="reveal" id="depo-titulo">O resultado aparece nas fotos. O carinho fica na <em>memória</em>.</h2>
+            </header>
+
+            <p class="placeholder-note reveal"><span class="tbc">[3 a 5 prints de mensagens ou avaliações reais de clientes, com autorização delas]</span></p>
+
+            <ul class="testi-grid" aria-label="Espaço reservado para prints de depoimentos">
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas">
+                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                    </div>
+                    <div class="chat" aria-hidden="true">
+                        <span class="bubble in w80"></span><span class="bubble in w60"></span>
+                        <span class="bubble out w70"></span><span class="bubble in w90"></span>
+                    </div>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas">
+                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                    </div>
+                    <div class="chat" aria-hidden="true">
+                        <span class="bubble in w90"></span><span class="bubble out w50"></span>
+                        <span class="bubble in w70"></span><span class="bubble in w60"></span>
+                    </div>
+                </li>
+                <li class="testi-card reveal">
+                    <div class="stars" role="img" aria-label="Avaliação 5 de 5 estrelas">
+                        <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                    </div>
+                    <div class="chat" aria-hidden="true">
+                        <span class="bubble in w60"></span><span class="bubble in w90"></span>
+                        <span class="bubble out w80"></span><span class="bubble in w50"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 11. Como funciona -->
+    <section class="steps section" id="servicos" aria-labelledby="steps-titulo">
+        <div class="container">
+            <header class="section-head">
+                <p class="eyebrow reveal"><span aria-hidden="true">→</span> A experiência Luiza Dias</p>
+                <h2 class="reveal" id="steps-titulo">Quatro etapas, zero <em>preocupação</em>.</h2>
+                <p class="lead reveal">Do primeiro contato ao fim da festa, um caminho pensado para você só se preocupar em aproveitar.</p>
+            </header>
+
+            <ol class="steps-list">
+                <li class="step reveal">
+                    <span class="step-num" aria-hidden="true">01</span>
+                    <svg class="step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                        <path d="M8 12h24a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H18l-8 6v-6H8a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z"/>
+                        <path d="M36 20h4a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-2v5l-6-5h-8"/>
+                        <circle cx="13" cy="22" r="1.4"/><circle cx="20" cy="22" r="1.4"/><circle cx="27" cy="22" r="1.4"/>
+                    </svg>
+                    <h3>A conversa</h3>
+                    <p>Entendo seu estilo, seu vestido, o local e o que você imagina para o dia.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num" aria-hidden="true">02</span>
+                    <svg class="step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                        <path d="M30 6l12 12-16 16-12-12z"/>
+                        <path d="M14 22l-6 6c-3 3-3 8 0 11s8 3 11 0l6-6"/>
+                        <path d="M10 42c-2 0-4-1-4-1"/>
+                    </svg>
+                    <h3>O teste</h3>
+                    <p>Fazemos a maquiagem com calma, ajustamos cada detalhe e definimos o visual final.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num" aria-hidden="true">03</span>
+                    <svg class="step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                        <rect x="6" y="10" width="36" height="32" rx="2"/>
+                        <path d="M6 18h36M16 6v8M32 6v8"/>
+                        <path d="M24 37s-6-3.6-6-7.8a3.3 3.3 0 0 1 6-2 3.3 3.3 0 0 1 6 2c0 4.2-6 7.8-6 7.8z"/>
+                    </svg>
+                    <h3>O grande dia</h3>
+                    <p>Chego no horário combinado e cuido da sua preparação do início ao fim.</p>
+                </li>
+                <li class="step reveal">
+                    <span class="step-num" aria-hidden="true">04</span>
+                    <svg class="step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                        <path d="M8 18h32l-3 24H11z"/>
+                        <path d="M17 18a7 7 0 0 1 14 0"/>
+                        <path d="M21 27h6v9h-6zM24 27v-3"/>
+                    </svg>
+                    <h3>O pós</h3>
+                    <p>Você recebe um kit de retoque e orientações para a maquiagem durar a festa toda.</p>
+                </li>
+            </ol>
+
+            <div class="section-foot reveal">
+                <a class="link-arrow" href="#contato">Ver a experiência completa <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. CTA final -->
+    <section class="final-cta" id="contato" aria-labelledby="cta-titulo">
+        <div class="container final-inner">
+            <!-- Ilustração: calendário com a data marcada -->
+            <svg class="calendar-art reveal" viewBox="0 0 200 180" aria-hidden="true" focusable="false">
+                <rect x="20" y="30" width="160" height="136" rx="4" class="cal-paper"/>
+                <path d="M20 58h160" class="cal-line"/>
+                <path d="M60 18v24M140 18v24" class="cal-ring"/>
+                <g class="cal-days">
+                    <circle cx="44" cy="80" r="3"/><circle cx="72" cy="80" r="3"/><circle cx="100" cy="80" r="3"/><circle cx="128" cy="80" r="3"/><circle cx="156" cy="80" r="3"/>
+                    <circle cx="44" cy="106" r="3"/><circle cx="72" cy="106" r="3"/><circle cx="128" cy="106" r="3"/><circle cx="156" cy="106" r="3"/>
+                    <circle cx="44" cy="132" r="3"/><circle cx="72" cy="132" r="3"/><circle cx="100" cy="132" r="3"/><circle cx="128" cy="132" r="3"/><circle cx="156" cy="132" r="3"/>
+                </g>
+                <circle cx="100" cy="106" r="15" class="cal-mark"/>
+                <path d="M100 113s-6-3.6-6-7.6a3.2 3.2 0 0 1 6-1.6 3.2 3.2 0 0 1 6 1.6c0 4-6 7.6-6 7.6z" class="cal-heart"/>
+            </svg>
+
+            <p class="eyebrow reveal">Agenda <span class="tbc">[2027]</span></p>
+            <h2 class="reveal" id="cta-titulo">A sua data ainda está <em>disponível</em>?</h2>
+            <p class="lead reveal">A agenda de <span class="tbc">[2027]</span> já está aberta e as datas são limitadas. Me conta quando e onde vai ser o seu evento, e eu te envio a disponibilidade e o orçamento completo.</p>
+            <div class="reveal">
+                <a class="btn btn-primary btn-lg" data-wa href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                    Consultar minha data no WhatsApp
+                </a>
+            </div>
+            <p class="support reveal">Respondo em até <span class="tbc">[24 horas]</span> nos dias úteis. Atendimentos todos os dias, inclusive fins de semana e feriados.</p>
+        </div>
+    </section>
+
+</main>
+
+<!-- 13. Rodapé -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a class="logo logo-light" href="#inicio" aria-label="Luiza Dias Makeup, voltar ao início">
+                <span class="logo-name">Luiza Dias</span>
+                <span class="logo-sub">Makeup</span>
+            </a>
+            <p>Luiza Dias Makeup — Maquiagem para noivas e eventos em Divinópolis e região.</p>
+        </div>
+
+        <nav aria-label="Navegação do rodapé">
+            <h2 class="footer-title">Navegação</h2>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#noivas">Noivas</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h2 class="footer-title">Contato</h2>
+            <ul class="contact-list">
+                <li>
+                    <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+                    <span>Instagram: <a data-instagram href="https://instagram.com/" target="_blank" rel="noopener"><span class="tbc">[@usuario]</span></a></span>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                    <span>WhatsApp: <a data-wa href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener"><span class="tbc">[(37) 9XXXX-XXXX]</span></a></span>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                    <span>Endereço do estúdio: <span class="tbc">[se houver]</span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© <span class="tbc">[2026]</span> Luiza Dias Makeup. Todos os direitos reservados. · Divinópolis · MG</p>
+    </div>
+</footer>
+
+<!-- Botão flutuante (mobile, após o hero) -->
+<a class="fab" data-wa href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data." target="_blank" rel="noopener" aria-label="Falar com a Luiza no WhatsApp" tabindex="-1" aria-hidden="true">
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+</a>
+
+<!-- 14. Pop-up de agendamento -->
+<dialog class="booking" id="agendamento" aria-labelledby="booking-titulo" aria-describedby="booking-sub">
+    <form class="booking-form" novalidate>
+        <button class="booking-close" type="button" data-close-dialog aria-label="Fechar">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <h2 id="booking-titulo">Garanta sua maquiagem com a <em>Luiza</em></h2>
+        <p id="booking-sub" class="booking-sub">Deixe seu contato que eu te chamo no WhatsApp.</p>
+
+        <div class="field">
+            <label for="f-nome">Nome completo</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="e-nome">
+            <p class="field-error" id="e-nome" aria-live="polite"></p>
+        </div>
+        <div class="field">
+            <label for="f-tel">Telefone (WhatsApp)</label>
+            <input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel-national" required aria-describedby="e-tel">
+            <p class="field-error" id="e-tel" aria-live="polite"></p>
+        </div>
+        <div class="field">
+            <label for="f-data">Data do evento</label>
+            <input id="f-data" name="data" type="date" required aria-describedby="e-data">
+            <p class="field-error" id="e-data" aria-live="polite"></p>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Quero agendar
+        </button>
+    </form>
+</dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>

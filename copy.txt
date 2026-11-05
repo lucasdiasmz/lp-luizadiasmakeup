@@ -1,0 +1,104 @@
+Landing page — Luiza Dias Makeup (textos)
+4 de nov. de 2026 · @Lucas
+Como usar este documento
+Os textos seguem a mesma ordem de seções do site de referência, com texto original para a Luiza. Tudo entre [colchetes] é dado a confirmar com ela antes de publicar.
+Ordem das seções:
+1. Barra de aviso (topo)
+2. Menu
+3. Hero
+4. Faixa de números
+5. Manifesto
+6. Sobre a Luiza
+7. Faixa de palavras (rolagem infinita)
+8. Atendimento para convidadas
+9. Portfólio
+10. Depoimentos
+11. Como funciona (4 etapas)
+12. CTA final — consulta de data
+13. Rodapé
+14. Pop-up de agendamento
+CTA padrão: todos os botões de agendamento levam ao WhatsApp da Luiza com mensagem pronta, por exemplo: "Oi, Luiza! Vim pelo site e queria consultar uma data."
+1. Barra de aviso (topo)
+Agenda de [2027] aberta · Vagas limitadas por data
+2. Menu
+Início · Sobre · Noivas · Portfólio · Serviços · Contato
+Botão do menu: Consultar data
+3. Hero
+Etiqueta: Maquiadora em Divinópolis · Noivas e eventos
+Título: Uma beleza que realça quem você já é.
+Subtítulo: Maquiagem e preparação para o seu grande dia, feitas com calma, cuidado e atenção a cada detalhe. Você só precisa aproveitar.
+Botão principal: Consultar minha data
+Botão secundário: Ver trabalhos
+Linha de apoio: Divinópolis e região · Atendimento no local do evento · Noivas, madrinhas e formandas
+4. Faixa de números
+Número
+Legenda
+[X] anos
+de experiência com maquiagem
++[X] clientes
+atendidas em casamentos e eventos
+[X] por data
+atendimento exclusivo para cada noiva
+Divinópolis
+e cidades da região Centro-Oeste de Minas
+Título de apoio: Uma história construída cliente por cliente.
+5. Manifesto
+Título: Mais do que uma maquiagem bonita.
+Quando você me escolhe, escolhe também quem vai estar ao seu lado nas horas que antecedem um dos dias mais especiais da sua vida.
+Eu chego cedo, organizo tudo com calma e acompanho cada etapa da sua preparação. Se bater o nervosismo, estou ali. Se algo precisar de ajuste, eu resolvo antes que você perceba.
+A maquiagem é o que aparece nas fotos. O cuidado é o que você vai lembrar.
+Botão: Quero esse cuidado no meu dia
+6. Sobre a Luiza
+Etiqueta: → Quem vai cuidar de você
+Título: Muito prazer, eu sou a Luiza.
+Sou maquiadora em Divinópolis há [X] anos e já acompanhei mais de [X] mulheres em casamentos, formaturas e eventos. Cada uma me ensinou algo novo sobre beleza e sobre gente.
+Acredito que a melhor maquiagem é aquela em que você se olha no espelho e se reconhece, só que na sua versão mais radiante.
+Botão: Conhecer minha história
+7. Faixa de palavras (rolagem infinita)
+Exclusividade · Cuidado · Pontualidade · Naturalidade · Durabilidade · Divinópolis
+8. Atendimento para convidadas
+Etiqueta: → Como organizo o seu dia
+Título: Eu cuido de você. Minha equipe cuida de quem você ama.
+Subtítulo: Mãe, madrinhas e damas prontas no horário, sem correria.
+No dia do casamento, minha atenção fica toda em você. Enquanto preparo a noiva, profissionais de confiança, que já trabalham comigo, atendem as pessoas mais próximas.
+Elas seguem o mesmo padrão de qualidade e respeitam o estilo de cada pessoa. Montamos o cronograma juntas, para que todo mundo fique pronto no tempo certo.
+No fim, você olha em volta e vê todo mundo lindo e tranquilo, curtindo o momento com você.
+Botão: Ver como funciona
+9. Portfólio
+Etiqueta: → Clientes reais
+Título: Cada noiva com a sua própria beleza.
+Subtítulo: Tons de pele, idades e estilos diferentes. Veja se você se identifica com alguma.
+Galeria: [4 a 8 fotos de noivas e clientes]
+Botão: Ver galeria completa
+10. Depoimentos
+Etiqueta: → O que elas contam depois
+Título: O resultado aparece nas fotos. O carinho fica na memória.
+Conteúdo: [3 a 5 prints de mensagens ou avaliações reais de clientes, com autorização delas]
+11. Como funciona (4 etapas)
+Etiqueta: → A experiência Luiza Dias
+Título: Quatro etapas, zero preocupação.
+Subtítulo: Do primeiro contato ao fim da festa, um caminho pensado para você só se preocupar em aproveitar.
+1. A conversa — Entendo seu estilo, seu vestido, o local e o que você imagina para o dia.
+2. O teste — Fazemos a maquiagem com calma, ajustamos cada detalhe e definimos o visual final.
+3. O grande dia — Chego no horário combinado e cuido da sua preparação do início ao fim.
+4. O pós — Você recebe um kit de retoque e orientações para a maquiagem durar a festa toda.
+Botão: Ver a experiência completa
+12. CTA final — consulta de data
+Etiqueta: Agenda [2027]
+Título: A sua data ainda está disponível?
+Texto: A agenda de [2027] já está aberta e as datas são limitadas. Me conta quando e onde vai ser o seu evento, e eu te envio a disponibilidade e o orçamento completo.
+Botão: Consultar minha data no WhatsApp
+Linha de apoio: Respondo em até [24 horas] nos dias úteis. Atendimentos todos os dias, inclusive fins de semana e feriados.
+13. Rodapé
+Luiza Dias Makeup — Maquiagem para noivas e eventos em Divinópolis e região.
+Navegação: Início · Sobre · Noivas · Portfólio · Serviços · Contato
+Contato:
+• Instagram: [@usuario]
+• WhatsApp: [(37) 9XXXX-XXXX]
+• Endereço do estúdio: [se houver]
+© [2026] Luiza Dias Makeup. Todos os direitos reservados. · Divinópolis · MG
+14. Pop-up de agendamento
+Título: Garanta sua maquiagem com a Luiza
+Subtítulo: Deixe seu contato que eu te chamo no WhatsApp.
+Campos: Nome completo · Telefone (WhatsApp) · Data do evento
+Botão: Quero agendar

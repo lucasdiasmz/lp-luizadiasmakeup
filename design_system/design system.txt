@@ -1,0 +1,270 @@
+# Design System — Luiza Dias Makeup
+
+Base visual para a landing page da Luiza Dias, maquiadora de noivas em Divinópolis (MG).
+Extraído das fotos de identidade visual enviadas: ensaio de noiva em preto e branco (véu, pérolas, leque "BRIDE") e fotos coloridas de making of (tons nude, cetim branco, batom rosé, detalhes dourados).
+
+> **Sobre o template rosa/preto ("We Love Makeup"):** aproveitei dele só a ideia de tipografia grande em caixa alta com texto vazado (outline) como elemento decorativo. A paleta preto + magenta neon **não** entrou, porque briga com as fotos da Luiza, que são claras, quentes e delicadas. Usar as duas juntas deixaria a página com cara de loja de cosméticos, e não de maquiadora de noivas.
+
+---
+
+## 1. Cores
+
+As cores foram amostradas direto das fotos (vestido preto, cortina, robe de cetim, batom, brinco dourado) e depois ajustadas para garantir contraste de leitura.
+
+### 1.1 Paleta principal
+
+| Token | Nome | Hex | Origem na foto | Uso |
+| --- | --- | --- | --- | --- |
+| `--ink` | Grafite Noite | `#1C1817` | Vestido preto da maquiadora | Títulos, texto principal, seções escuras, rodapé |
+| `--rose` | Rosé Batom | `#8E5A52` | Batom da noiva | **Somente CTAs** (botões de WhatsApp) e links |
+| `--rose-dark` | Rosé Profundo | `#6F433D` | — (variação) | Hover/pressed dos botões |
+
+### 1.2 Paleta secundária
+
+| Token | Nome | Hex | Origem na foto | Uso |
+| --- | --- | --- | --- | --- |
+| `--pearl` | Pérola | `#FAF6F1` | Parede clara / véu | Fundo padrão da página |
+| `--linen` | Linho | `#EDE2D6` | Robe de cetim | Fundo de seções alternadas e cards |
+| `--sand` | Areia | `#C8B3A2` | Cortina do making of | Bordas de destaque, divisores, ícones grandes |
+
+### 1.3 Cores de suporte
+
+| Token | Nome | Hex | Uso |
+| --- | --- | --- | --- |
+| `--champagne` | Champanhe | `#A9814F` | Detalhes finos: linhas, estrelas de avaliação, números grandes. Não usar em texto pequeno |
+| `--taupe` | Taupe | `#6B5E56` | Texto secundário, legendas, placeholders |
+| `--line` | Linha | `#E2D6CA` | Bordas de inputs e cards |
+| `--success` | Verde Sálvia | `#3D7A57` | Mensagens de sucesso, ícone do botão flutuante |
+| `--error` | Vermelho Terra | `#A33A32` | Erros de formulário |
+
+### 1.4 Regras de uso
+
+- **Proporção 70 / 20 / 10:** 70% Pérola e Linho (respiro), 20% Grafite (texto e uma ou duas seções escuras), 10% Rosé (só ações).
+- **O Rosé é exclusivo do CTA.** Se ele aparecer em títulos ou enfeites, o botão perde destaque e a taxa de clique cai. O olho precisa aprender que "rosé = falar com a Luiza".
+- **Champanhe é joia, não tinta:** linhas de 1px, números da faixa de estatísticas, ícones. Contraste dele sobre Pérola é baixo (≈3:1), então nunca em parágrafo.
+- **Fotos em P&B** combinam com seções em Grafite; **fotos coloridas** combinam com Pérola e Linho.
+- Contrastes verificados: Grafite sobre Pérola ≈ 16:1; Taupe sobre Pérola ≈ 6:1; branco sobre Rosé ≈ 5,6:1 (todos passam AA).
+
+---
+
+## 2. Tipografia
+
+### 2.1 Fontes (Google Fonts)
+
+| Papel | Fonte | Alternativas | Por quê |
+| --- | --- | --- | --- |
+| Display (títulos) | **Cormorant Garamond** | Playfair Display, Bodoni Moda | Serifa de alto contraste, lembra convites de casamento e editoriais de moda. O itálico dela é o "toque de assinatura" |
+| Texto e interface | **Jost** | Montserrat, Outfit | Sans geométrica leve; equilibra a serifa e traz a caixa alta limpa do template de referência |
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet"
+>
+```
+
+### 2.2 Hierarquia
+
+| Nível | Fonte | Tamanho (desktop → mobile) | Peso | Entrelinha | Extra |
+| --- | --- | --- | --- | --- | --- |
+| H1 | Cormorant Garamond | 72px → 44px | 500 | 1.05 | Palavra-chave em itálico |
+| H2 | Cormorant Garamond | 48px → 34px | 500 | 1.1 | — |
+| H3 | Cormorant Garamond | 28px → 24px | 600 | 1.2 | — |
+| Eyebrow (etiqueta) | Jost | 12px | 500 | 1.4 | Caixa alta, `letter-spacing: 0.2em`, cor Champanhe ou Taupe |
+| Corpo grande (lead) | Jost | 19px → 17px | 300 | 1.7 | Subtítulos do hero e das seções |
+| Corpo | Jost | 17px → 16px | 300/400 | 1.7 | Máx. 65 caracteres por linha |
+| Pequeno | Jost | 14px | 400 | 1.5 | Microcopy abaixo de botões, legendas |
+| Botão | Jost | 14px | 500 | 1 | Caixa alta, `letter-spacing: 0.12em` |
+| Decorativo | Jost | 160px+ | 300 | 0.9 | Caixa alta, texto vazado (outline), opacidade baixa |
+
+### 2.3 Regras de uso
+
+- **Só uma palavra em itálico por título** ("o seu *grande dia*"). Mais que isso vira poluição.
+- Títulos com `text-wrap: balance` para não sobrar uma palavra sozinha na última linha.
+- Use `clamp()` para os tamanhos, assim a escala muda sem precisar de vários breakpoints:
+
+```css
+h1 {
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(2.125rem, 4vw, 3rem);
+}
+```
+
+---
+
+## 3. Componentes
+
+### 3.1 Botões
+
+| Variante | Visual | Quando usar |
+| --- | --- | --- |
+| **Primário (WhatsApp)** | Fundo Rosé, texto branco, ícone do WhatsApp à esquerda, formato pílula, 56px de altura | Toda ação que leva ao WhatsApp. Uma por tela, no máximo |
+| **Secundário** | Fundo transparente, borda 1px Grafite, texto Grafite | Ações de navegação ("Ver portfólio", "Conhecer minha história") |
+| **Link** | Texto Grafite com sublinhado Champanhe de 1px, seta → | Ações terciárias dentro de texto |
+| **Flutuante** | Círculo 60px, fundo Grafite, ícone do WhatsApp em branco, canto inferior direito | Sempre visível no mobile após o hero |
+
+**Estados:** hover escurece para Rosé Profundo e sobe 1px; foco mostra contorno 2px Champanhe com 3px de afastamento; pressed volta ao lugar.
+
+**Microcopy obrigatório** abaixo do botão principal: "Resposta em até 24h · Sem compromisso". Isso reduz o medo de clicar.
+
+```css
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 56px;
+    padding: 0 32px;
+    border: none;
+    border-radius: 999px;
+    background: var(--rose);
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-cta);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--rose-dark);
+    transform: translateY(-1px);
+}
+```
+
+**Por que não usar o verde oficial do WhatsApp no botão principal?** O verde `#25D366` grita mais que todo o resto da página e quebra a sensação de exclusividade. O ícone do WhatsApp dentro do botão rosé já comunica o destino. O verde só aparece, discreto, no flutuante se você quiser testar depois (vale um teste A/B).
+
+### 3.2 Inputs de formulário (pop-up de agendamento)
+
+- Altura 52px, fundo branco, borda 1px Linha, raio 4px.
+- Label sempre visível **acima** do campo (Jost 13px, caixa alta, Taupe). Nada de placeholder no lugar do label.
+- Foco: borda Rosé + halo `0 0 0 4px rgba(142, 90, 82, 0.12)`.
+- Erro: borda Vermelho Terra + mensagem abaixo explicando o que corrigir ("Digite o telefone com DDD").
+- **Máximo de 3 campos:** Nome, WhatsApp, Data do evento. Cada campo a mais derruba conversão.
+- Ao enviar, o formulário abre o WhatsApp com a mensagem já preenchida com os dados.
+
+### 3.3 Cards
+
+| Card | Estilo |
+| --- | --- |
+| **Etapa (Como funciona)** | Fundo Linho, sem sombra, raio 4px, número grande em Cormorant Champanhe, título H3, texto curto |
+| **Depoimento** | Fundo branco, borda 1px Linha, sombra suave, 5 estrelas Champanhe, texto em Cormorant itálico 22px, nome em eyebrow |
+| **Foto de portfólio** | Sem borda nem sombra; a foto é o card. Moldura em **arco** (topo arredondado, como o espelho do making of) na foto de destaque da seção Sobre |
+| **Número (faixa de estatísticas)** | Sem fundo; número em Cormorant 56px Champanhe, legenda em Jost 14px Taupe, separados por linha vertical de 1px |
+
+---
+
+## 4. Estética
+
+### 4.1 Arredondamento (border-radius)
+
+| Token | Valor | Onde |
+| --- | --- | --- |
+| `--radius-none` | 0 | Fotos da galeria, seções |
+| `--radius-sm` | 4px | Inputs, cards, tags |
+| `--radius-arch` | 999px 999px 0 0 | Foto de destaque (Sobre e Hero) — assinatura visual da marca |
+| `--radius-pill` | 999px | Botões e botão flutuante (redondo como as pérolas) |
+
+**Regra:** só três formatos na página inteira — reto, quase reto (4px) e totalmente redondo. Nada de 12px ou 16px "meio termo", que deixa a página com cara de template.
+
+### 4.2 Sombras
+
+Sombras quentes (baseadas no Grafite, nunca preto puro) e raras. Elas indicam o que é clicável ou o que flutua.
+
+| Token | Valor | Onde |
+| --- | --- | --- |
+| `--shadow-sm` | `0 1px 2px rgba(28, 24, 23, 0.06)` | Inputs |
+| `--shadow-md` | `0 18px 40px -18px rgba(28, 24, 23, 0.22)` | Cards de depoimento, pop-up |
+| `--shadow-cta` | `0 10px 24px -10px rgba(142, 90, 82, 0.55)` | Botão primário (sombra rosé, faz ele "acender") |
+
+### 4.3 Espaçamentos
+
+Escala de base 4px. Use sempre um destes valores:
+
+| Token | Valor | Uso típico |
+| --- | --- | --- |
+| `--space-1` | 4px | Ícone e texto colados |
+| `--space-2` | 8px | Label e input |
+| `--space-3` | 12px | Itens de lista |
+| `--space-4` | 16px | Gutter lateral mínimo no mobile |
+| `--space-5` | 24px | Padding interno de cards |
+| `--space-6` | 32px | Entre título e texto |
+| `--space-7` | 48px | Entre blocos de uma seção |
+| `--space-8` | 64px | Padding vertical de seção (mobile) |
+| `--space-9` | 96px | Padding vertical de seção (desktop) |
+| `--space-10` | 128px | Respiro do hero e do CTA final |
+
+- Largura máxima do conteúdo: **1200px**; texto corrido: **640px**.
+- Muito respiro é sinal de marca premium. Na dúvida, aumente o espaço, não diminua.
+
+---
+
+## 5. Regras para autoridade e conversão
+
+1. **CTA a cada duas seções**, sempre o mesmo texto-base ("Consultar minha data") e a mesma cor.
+2. **Mensagem pronta no link do WhatsApp:** `https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20Luiza!%20Vim%20pelo%20site%20e%20queria%20consultar%20uma%20data.`
+3. **Prova antes do pedido:** faixa de números logo após o hero e depoimentos logo antes do CTA final.
+4. **Fotos reais, nunca banco de imagem.** As fotos P&B do ensaio servem para as seções emocionais (Manifesto); as coloridas, para o Sobre e o Portfólio, porque mostram o resultado real da pele.
+5. **Seção escura uma vez só** (Manifesto ou CTA final em Grafite). Repetir tira o impacto.
+6. **Botão flutuante** aparece só depois que a pessoa rola além do hero, para não competir com o botão principal.
+
+---
+
+## 6. Tokens CSS prontos
+
+```css
+:root {
+    /* Cores */
+    --ink: #1C1817;
+    --rose: #8E5A52;
+    --rose-dark: #6F433D;
+    --pearl: #FAF6F1;
+    --linen: #EDE2D6;
+    --sand: #C8B3A2;
+    --champagne: #A9814F;
+    --taupe: #6B5E56;
+    --line: #E2D6CA;
+    --success: #3D7A57;
+    --error: #A33A32;
+
+    /* Tipografia */
+    --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+    --font-body: "Jost", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+
+    /* Raios */
+    --radius-sm: 4px;
+    --radius-arch: 999px 999px 0 0;
+    --radius-pill: 999px;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px rgba(28, 24, 23, 0.06);
+    --shadow-md: 0 18px 40px -18px rgba(28, 24, 23, 0.22);
+    --shadow-cta: 0 10px 24px -10px rgba(142, 90, 82, 0.55);
+
+    /* Espaçamentos */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 96px;
+    --space-10: 128px;
+}
+```
+
+---
+
+## Resumo do tom visual
+
+**Editorial de noiva:** fundo pérola e linho com muito respiro, títulos em serifa elegante e fotos reais em P&B e cor quente.
+**Delicado, mas com autoridade:** grafite firme no texto, detalhes champanhe como joias e formas redondas que lembram pérolas e o espelho.
+**Um único sinal de ação:** o rosé do batom aparece só nos botões de WhatsApp, para que o olho saiba exatamente onde clicar.
