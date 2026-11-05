@@ -4,7 +4,7 @@
 
     /* ===== Configuração: troque pelos dados reais da Luiza ===== */
     var CONFIG = {
-        whatsapp: "55XXXXXXXXXXX", // DDI + DDD + número, só dígitos. Ex.: 5537999999999
+        whatsapp: "553799669374", // DDI + DDD + número, só dígitos: +55 37 9966-9374
         instagram: "https://instagram.com/", // Ex.: https://instagram.com/luizadiasmakeup
         mensagemPadrao: "Oi, Luiza! Vim pelo site e queria consultar uma data."
     };
